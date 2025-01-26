@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="logos/logo.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/style.css">
 
         <title>RushTech</title>
     </head>
@@ -29,6 +29,9 @@
                         </li>
                         <li class="nav__item">
                             <a href="#products" class="nav__link">Produtos</a>
+                        </li>
+                        <li class="nav_last_item">
+                            <a href="pages/cart.html" target="_blank" class="nav__link" id="cart">Carrinho</a>
                         </li>
                     </ul>
 
@@ -143,65 +146,74 @@
 
                 <div class="products__container container grid">
                     <article class="products__card">
+                        <div class="product1">
                         <div class="products__content">
                             <img src="img/product1.png" alt="" class="products__img">
     
                             <h3 class="products__title">GEFORCE-RTX 2060 SUPER 6GB GDDR6</h3>
                             <span class="products__price">R$ 4.500,00</span>
     
-                            <button class="button button--flex products__button">
+                            <button class="button button--flex products__button" onclick="addToCart({name: 'GEFORCE-RTX 2060 SUPER 6GB GDDR6', price: 'R$ 4500,00', image: '/TrabalhoFinalFiecTI/img/product1.png'})">
                                 <i class="ri-shopping-bag-line button__icon"></i>
                             </button>
                         </div>
+                    </div>
                     </article>
                     <article class="products__card">
+                        <div class="product2">
                         <div class="products__content">
                             <img src="img/product2.png" alt="" class="products__img">
-    
                             <h3 class="products__title">ACCESS POINT CISCO CATALYST 9100 WIRELESS + INSTALAÇÃO</h3>
                             <span class="products__price">R$ 3.300,00</span>
     
-                            <button class="button button--flex products__button">
+                            <button class="button button--flex products__button" onclick="addToCart({name: 'ACCESS POINT CISCO CATALYST 9100 WIRELESS + INSTALAÇÃO', price: 'R$ 3300,00', image: '/TrabalhoFinalFiecTI/img/product2.png'})">
                                 <i class="ri-shopping-bag-line button__icon"></i>
                             </button>
                         </div>
+                    </div>
                     </article>
                     <article class="products__card">
+                        <div class="product3">
                         <div class="products__content">
                             <img src="img/product3.png" alt="" class="products__img">
     
                             <h3 class="products__title">PROCESSADOR AMD RYZEN 7 5700X 3.4GHz</h3>
                             <span class="products__price">R$ 1.120,00</span>
     
-                            <button class="button button--flex products__button">
+                            <button class="button button--flex products__button" onclick="addToCart({name: 'PROCESSADOR AMD RYZEN 7 5700X 3.4GHz', price: 'R$ 1120,00', image: '/TrabalhoFinalFiecTI/img/product3.png'})">
                                 <i class="ri-shopping-bag-line button__icon"></i>
                             </button>
                         </div>
+                    </div>
                     </article>
                     <article class="products__card">
+                        <div class="product4">
                         <div class="products__content">
                             <img src="img/product4.png" alt="" class="products__img">
     
                             <h3 class="products__title">SERVIDOR DELL POWEREDGE T320 + MONTAGEM</h3>
                             <span class="products__price">R$ 4.059,00</span>
     
-                            <button class="button button--flex products__button">
+                            <button class="button button--flex products__button" onclick="addToCart({name: 'SERVIDOR DELL POWEREDGE T320 + MONTAGEM', price: 'R$ 4059,00', image: '/TrabalhoFinalFiecTI/img/product4.png'})">
                                 <i class="ri-shopping-bag-line button__icon"></i>
                             </button>
+                        </div>
                         </div>
                     </article>
 
                     <article class="products__card">
+                        <div class="product5">
                         <div class="products__content">
                             <img src="img/product5.png" alt="" class="products__img">
     
                             <h3 class="products__title">NOTEBOOK DELL INSPIRON15 I7-1255U </h3>
                             <span class="products__price">R$ 3.399,00</span>
     
-                            <button class="button button--flex products__button">
+                            <button class="button button--flex products__button" onclick="addToCart({name: 'NOTEBOOK DELL INSPIRON15 I7-1255U', price: 'R$ 3399,00', image: '/TrabalhoFinalFiecTI/img/product5.png'})">
                                 <i class="ri-shopping-bag-line button__icon"></i>
                             </button>
                         </div>
+                    </div>
                     </article>
                 </div>
             </section>
@@ -267,6 +279,6 @@
         </a>
         
         <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="index.js"></script>
+        <script src="scripts/index.js"></script>
     </body>
 </html>

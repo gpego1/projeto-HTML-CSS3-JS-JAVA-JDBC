@@ -112,6 +112,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  margin: 0;
   z-index: var(--z-fixed);
   background: transparent;
 }
@@ -120,7 +121,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Certifique-se de que os elementos filhos respeitem a altura */
 }
+.nav_last_item {
+  background-color: #0066A2;
+  height: 100%; /* Preenche toda a altura da nav */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  padding: 0 1rem;
+}
+#cart {
+  color: whitesmoke;
+}
+
 .nav__logo {
   display: flex;
   width: 1.5rem;
@@ -130,6 +143,7 @@ img {
   color: var(--white-color);
   cursor: pointer;
 }
+
 
 @media screen and (max-width: 767px) {
   .nav__menu {
