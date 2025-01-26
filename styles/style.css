@@ -111,7 +111,7 @@ img {
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100px;
   margin: 0;
   z-index: var(--z-fixed);
   background: transparent;
@@ -121,19 +121,25 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative; /* Certifique-se de que os elementos filhos respeitem a altura */
+  position: relative; 
 }
-.nav_last_item {
+.nav_cart_item {
   background-color: #0066A2;
-  height: 100%; /* Preenche toda a altura da nav */
+  height: 100%; 
   display: flex;
-  align-items: center; /* Centraliza verticalmente o conteúdo */
+  align-items: center; 
   padding: 0 1rem;
 }
 #cart {
   color: whitesmoke;
 }
-
+.nav_login_item {
+  background-color: #009A66;
+  height: 100%; 
+  display: flex;
+  align-items: center; 
+  padding: 0 1rem;
+}
 .nav__logo {
   display: flex;
   width: 1.5rem;

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/TrabalhoFinalFiecTI/styles/cart.css">
-    <script src="/TrabalhoFinalFiecTI/scripts/index.js"></script>
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="/styles/cart.css">
+    <script src="/scripts/index.js"></script>
 </head>
 <body onload="(async function() { await loadCart(); })()">
     <div class="container">
         <h1>Meu Carrinho</h1>
         <div id="cart-container"></div>
-        <a href="/TrabalhoFinalFiecTI/index.html">Voltar para a Loja</a>
+        <a href="/index.html">Voltar para a Loja</a>
         <button class="clear-button" onclick="clearCart()">Limpar Carrinho</button>
         <button class="total-button" onclick="calculateTotal()">Finalizar Compra</button>
     </div>
