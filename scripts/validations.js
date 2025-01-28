@@ -8,8 +8,6 @@ async function validarCPF(cpf) {
         return false;
     }
 }
-
-// Validação dos campos
 async function validarFormulario(event) {
     event.preventDefault();
 
