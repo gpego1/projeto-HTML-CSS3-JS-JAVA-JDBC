@@ -75,7 +75,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     font-size: var(--normal-font-size);
 }
 
-input[type="submit"] {
+button[type="submit"] {
     width: 100%;
     padding: 12px;
     border: none;
@@ -87,7 +87,7 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: #2980b9;
 }
 
